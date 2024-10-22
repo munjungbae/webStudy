@@ -6,6 +6,10 @@
     <title>RADIO&CHECKBOX</title>
 </head>
 <style>
+   #main{
+        display: flex;
+        flex-direction: row;
+    }
 
 </style>
 <body>
@@ -22,7 +26,7 @@
         <hr>
 
         <p>동물원에서 보고싶은 동물을 고르세요. (복수 선택)</p>
-        <div class="main">
+        <div id="main">
         <input type="checkbox" name="animal" id="animal1"><figure>
         <label for="animal1"><img src="../../chater02_기본문서/media/media/cat-meme-2.gif" alt="고양이1" width="150px">
             <figcaption>
@@ -44,9 +48,10 @@
         </div>
         <hr>
         <br><br>
-        <div class="footer"></div>
+        <div class="footer">
         <button type="submit">정보 전송</button>
         <button type="reset">정보 삭제</button>
+    </div>
     </form>
 </body>
 </html>
