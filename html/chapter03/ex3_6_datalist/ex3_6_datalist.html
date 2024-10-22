@@ -7,8 +7,16 @@
 </head>
 <style>
     form{
-        border: 1px solid balck;
-        margin: 0 auto;
+        width: 650px;
+            border: 1px solid black;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 10px;
+    }
+    label {
+        display: inline-block;
+        width: 300px;
+        background-color: aqua;
     }
 </style>
 <body>
@@ -21,8 +29,16 @@
             <option value="오리"></option>
             <option value="코알라"></option>
         </datalist>
-
         <br><br>
+        <label for="ani2">키우고 싶은 동물은?</label>
+        <select name="ani2" id="ani2">
+            <option value="개">개</option>
+            <option value="고양이">고양이</option>
+            <option value="오리">오리</option>
+            <option value="코알라">코알라</option>
+        </select>
+        <br><br>
+
         <button type="submit">서버 전송</button>
         <button type="reset">전송 취소</button>
     </form>
