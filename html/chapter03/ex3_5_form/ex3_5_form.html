@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM DATA</title>
+</head>
+<style>
+    form {
+        width: 650px;
+            border: 1px solid black;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 10px;
+        }
+    
+    label{
+        display: inline-block;
+        width: 400px;
+        background-color: rgba(255, 0, 0, 0.13);
+
+    }
+    textarea {
+        margin-left: 400px;
+    }
+    form div {
+        text-align: center;
+    }
+</style>
+<body>
+    <h1 style="display: none;">FORM DATA 예시</h1>
+    <form action="#" method="post">
+        <label for="age">&lt;input 기본&gt;</label>
+        <input type="text" name="age" id="age">
+        <br><br>
+
+        <label for="email">&lt;type = "text" + 추가 속성&gt;</label>
+        <input type="text" name="email" id="email" placeholder="HTML">
+        <br><br>
+
+        <label for="id">&lt;type = "text" + 아이디&gt;</label>
+        <input type="text" name="id" id="id" placeholder="ID">
+        <br>
+        <label for="pwd">&lt;type = "text" + 비밀번호&gt;</label>
+        <input type="password" name="pwd" id="pwd" placeholder="password">
+        <br><br>
+
+        <label for="into"><b>여러줄 문자 입력 : &lt;textarea&gt;</b></label>
+        <br>
+        <textarea name="into" id="into" cols="30" rows="10" placeholder="300자 이내로 입력 해 주세요"></textarea>
+        <br><br>
+        
+        <div>
+            <button type="submit">서버 전송</button>
+            <button type="reset">전송 취소</button>
+        </div>
+        
+
+    </form>
+</body>
+</html>
