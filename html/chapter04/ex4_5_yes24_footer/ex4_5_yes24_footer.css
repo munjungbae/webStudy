@@ -1,11 +1,5 @@
-footer {
-    border: 2px solid red;
-    height: 30vh;
-}
-
 .menu {
     width: 960px;
-    border: 2px dotted blue;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -15,13 +9,11 @@ footer {
 }
 .menu_item{
     width: 500px;
-    border: 1px solid black;
     padding: 2px;
 }
 
 .menu_icon {
     width: 300px;
-    border: 1px solid black;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -42,7 +34,6 @@ footer {
 }
 .menu_content{
     width: 960px;
-    border: 2px dotted blue;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -51,12 +42,10 @@ footer {
 
 .menu_content_logo {
     width: 500px;
-    border: 1px solid black;
 
 }
 .menu_content_qna{
     width: 500px;
-    border: 1px solid black;
     font-size: x-small;
 }
 .menu_content_qna table{
@@ -83,7 +72,6 @@ h6{
 .menu_icon a {
     text-decoration: none;
     color: rgba(0,0,0,1);
-    border: 1px solid black;
     display: inline-block;
     padding: 3px;
 }
@@ -92,20 +80,17 @@ h6{
 /* 회사 메뉴 회사 로고 */
 .menu_company_logo{
     width: 960px;
-    border: 2px dotted blue;
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 .menu_company_logo_1 {
-    border: 1px solid black;
     
 }
 
 .menu_last{
     width: 960px;
-    border: 2px dotted blue;
     margin: 0 auto;
     font-size: x-small;
     text-align: center;
