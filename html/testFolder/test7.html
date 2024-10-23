@@ -8,8 +8,11 @@
 <style>
    div.banner {
     background-image: url(https://t1.daumcdn.net/news/202211/09/seoul/20221109075102996egqd.jpg);
+    background-size: cover;
     height: 640px;
-    width: 965px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
    }
    div.linenum1 {
     background-color: rgba(0, 0, 0, 0.4);
@@ -27,8 +30,21 @@
    div.banner p{
     color: orange;
     font-size: 1.2em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
    }
+   .ul1{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+        margin-right: 30px;
+        font-size: medium;
+    }
 </style>
 
 <body>
@@ -38,9 +54,14 @@
                 <h1>가정용 꿀 사과</h1>
                 <p>흡집이 있고 약간은 못생겼지만 맛과 영양은 그대로 입니다. <br>
                 질 좋은 사과를 저렴하게 즐겨 보세요!</p>
-            </div>
+                <ul class="ul1">
+                    <li><a href="#">주문하기</a></li>
+                    <li><a href="#">농장위치</a></li>
+                    <li><a href="#">원산지정보</a></li>
+                </ul>
         </div>
-        
+    </div>
+       
     </header>
 </body>
 </html>
