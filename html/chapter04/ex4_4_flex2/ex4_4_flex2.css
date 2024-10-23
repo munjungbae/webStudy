@@ -1,0 +1,26 @@
+.container {
+    background-color: rgba(139, 240, 172, 0.548);
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+
+}
+.item {
+    width: 250px;
+    height: 50px;
+    border: 2px solid black;
+}
+.item1 {
+    background-color: rgba(0, 0, 0, 0.7);
+    flex-basis: 33%;  
+    align-self: end; 
+}
+.item2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-basis: 33%;  
+    align-self: center;
+}
+.item3 {
+    background-color: rgba(0, 0, 0, 0.3);
+    flex-basis: 33%;  
+}
