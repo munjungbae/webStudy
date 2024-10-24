@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/f5a3833180.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Teko:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <style>
     * {
@@ -33,14 +36,24 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
+        border-radius: 100px;
     }
 
     div.nav_logo {
-        font-size: 24px;
-        font-weight: 700;
         display: flex;
         justify-content: baseline;
         align-items: center;
+        font-family: "Teko", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    div.nav_logo a:hover {
+        background-color: black;
+        border-radius: 10px;
+        color: white;
     }
 
     div.nav_logo i {
@@ -48,11 +61,6 @@
         font-size: 32px;
         margin-right: 5px;
     }   
-
-    div.nav_logo:hover {
-        background-color: black;
-        color: white;
-    }
 
     ul.nav_menu {
         list-style-type: none;
@@ -70,6 +78,7 @@
     ul.nav_menu a:hover {
         background-color: black;
         color: white;
+        border-radius: 100px;
     }
 
     ul.nav_icons {
@@ -90,9 +99,12 @@
         padding: 8px 15px;
     }
 
+
+
     ul.nav_icons a:hover {
         background-color: black;
         color: white;
+        border-radius: 100px;
     }
 
 </style>
@@ -101,6 +113,7 @@
         <div class="nav_logo">
             <a href="#"><i class="fa-brands fa-google"></i></a>
             <a href="#">WEB CODING</a>
+            
         </div>
             <ul class="nav_menu">
                 <li><a href="#">메뉴1</a></li>
