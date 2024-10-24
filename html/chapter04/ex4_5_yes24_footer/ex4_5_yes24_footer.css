@@ -38,19 +38,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: small;
 }
 
 .menu_content_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 500px;
 
 }
 .menu_content_qna{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
     width: 500px;
     font-size: x-small;
 }
 .menu_content_qna table{
     display: flex;
-    justify-content: end;
+    justify-content: start;
     align-items: center;
     font-size: x-small;
 }
