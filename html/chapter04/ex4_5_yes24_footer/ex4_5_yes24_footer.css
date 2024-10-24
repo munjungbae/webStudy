@@ -1,0 +1,104 @@
+.menu {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_item{
+    width: 500px;
+    padding: 2px;
+}
+
+.menu_icon {
+    width: 300px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu_item ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.menu_item li a  {
+    text-decoration: none;
+    color: rgba(0,0,0,1);
+}
+.menu_content{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+}
+
+.menu_content_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 500px;
+
+}
+.menu_content_qna{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 500px;
+    font-size: x-small;
+}
+.menu_content_qna table{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: x-small;
+}
+
+table tr{
+    width: 50px;
+    
+}
+
+h6{
+    margin: 0;
+}
+
+.menu_content_qna a{
+    text-decoration: none;
+    color: rgba(0,0,0,1);
+}
+
+.menu_icon a {
+    text-decoration: none;
+    color: rgba(0,0,0,1);
+    display: inline-block;
+    padding: 3px;
+}
+
+
+/* 회사 메뉴 회사 로고 */
+.menu_company_logo{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu_company_logo_1 {
+    
+}
+
+.menu_last{
+    width: 960px;
+    margin: 0 auto;
+    font-size: x-small;
+    text-align: center;
+}
