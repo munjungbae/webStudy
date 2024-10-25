@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: beige;
+    height: 2000px;
+}
+
+h1{
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 100px;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: beige;
+    z-index: 100;
+    border: 1px solid black;
+    padding: 8px 8px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div.sign_up {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+div.sign_up a{
+    margin-right: 30px;
+}
+div.sign_up .ticket{
+    background-color: beige;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 30px;
+
+}
+
+div.sign_up .ticket:hover {
+    background-color: orange;
+    color: white;
+}
+
+
+div.sign_up .icon {
+    background-color: beige;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 30px;
+}
+
+div.sign_up .icon :hover {
+    background-color: orange;
+    color: white;
+}
+
+.sign_up_icon summary{
+    font-size: 10px;
+}
+
+div.menu_icon .cat{
+    font-size: 60px;
+}
+div.menu_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div.menu_icon p{
+    position: relative;
+    font-size: x-large;
+    padding: 0px;
+    margin: 0px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    padding: 20px 15px;
+}
