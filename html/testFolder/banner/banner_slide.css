@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: beige;
+    height: 2000px;
+}
+
+h1{
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 100px;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: beige;
+    z-index: 100;
+    border: 1px solid black;
+    padding: 8px 8px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div.sign_up {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+div.sign_up a{
+    margin-right: 30px;
+}
+div.sign_up .ticket{
+    background-color: beige;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 30px;
+
+}
+
+div.sign_up .ticket:hover {
+    background-color: orange;
+    color: white;
+}
+
+
+div.sign_up .icon {
+    background-color: beige;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 30px;
+}
+
+div.sign_up .icon :hover {
+    background-color: orange;
+    color: white;
+}
+
+.sign_up_icon summary{
+    font-size: 10px;
+}
+
+div.menu_icon .cat{
+    font-size: 60px;
+}
+div.menu_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div.menu_icon p{
+    position: relative;
+    font-size: x-large;
+    padding: 0px;
+    margin: 0px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    padding: 20px 15px;
+}
+
+/* img{
+    width: 100%;
+    border-radius: 100px;
+} */
+
+
+
+/* INPUT 가리기 */
+.section input[id*="slide"] {
+    display:none;
+}
+
+
+/* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+.section .slidewrap {
+    max-width:cover;
+    margin:0 80px;
+    overflow:hidden;
+}
+.section .slidelist {
+    white-space:nowrap;
+    font-size:0;
+}
+.section .slidelist > li {
+    display:inline-block;
+    vertical-align:middle;
+    width:100%;
+    transition:all .7s;
+}
+.section .slidelist > li > a {
+    display:block;
+    position:relative;
+}
+.section .slidelist > li > a img {
+    width:100%;
+    border-radius: 30px;
+}
+
+/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+.section .slidelist label {
+    position:absolute;
+    z-index:1;
+    top:100;
+    transform:translateY();
+    padding: 570px 300px 570px 0px;
+    cursor:pointer;
+}
+
+.section .slidelist .left {
+    background:url(../testFolder/img/left-44037_1280.png) center center / no-repeat;
+    }
+.section .slidelist .right {
+    right:0px;
+    background:url('../testFolder/img/right-44058_1280.png') center center / no-repeat;
+}
+
+/* INPUT 체크되면 변화값이 li까지 전달되는 스타일 */
+.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {
+    transform:translateX(0%);
+}
+.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {
+    transform:translateX(-100%);
+}
+.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {
+    transform:translateX(-200%);
+}
