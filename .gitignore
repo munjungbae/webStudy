@@ -143,3 +143,6 @@ html/chapter04/ch04_media/udong.png
 html/chapter04/ch04_media/watermelon.png
 html/chapter04/ch04_media/yogurt1.png
 html/chapter04/ch04_media/yogurt2.png
+*.jpg
+*.png
+*.db

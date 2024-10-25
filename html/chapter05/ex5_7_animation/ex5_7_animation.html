@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <style>
+        @keyframes down {
+            0% {transform: translateY(0px) scale(1,1);
+              }
+            50% {transform: translateY(400px) scale(2,2);
+                }
+            100%{transform: translateY(0px) scale(1,1);}
+        }
+        body img:nth-child(1) {
+            animation: down 10s;
+        }
+        body img:nth-child(2) {
+            animation: down 130s;
+        }
+        body img:nth-child(3) {
+            animation: down 50s;
+        }
+        body img:nth-child(4) {
+            animation: down 30s;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../font/font_h.png" alt="h">
+    <img src="../font/font_t.png" alt="t">
+    <img src="../font/font_m.png" alt="m">
+    <img src="../font/font_l.png" alt="l">
+</body>
+</html>
