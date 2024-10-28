@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOSTING TEST</title>
+    <script>
+        //이름이 있는함수
+        function messagePrint() {
+            console.log("message1");
+        }
+        
+        // 이름이 없는 익명함수
+        let messagePrint2 = function() {
+            console.log("message2");
+        };
+        
+        let messagePrint3 = () => console.log("message3");
+        messagePrint(); 
+        messagePrint2(); 
+        messagePrint3();
+        
+    </script>
+</head>
+<body>
+    <h1>함수 호이스팅 테스트</h1>
+</body>
+</html>
