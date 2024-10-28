@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT</title>
+    <script>
+        let count = 0;
+        function colorChange() {
+            // html ui 객체를 가져오기
+            let h1Obj = window.document.getElementById("change");
+            h1Obj.style.backgroundColor = "aqua";
+            h1Obj.style.color= "white";
+            count++
+            if (count % 2 == 0) {
+                h1Obj.style.backgroundColor = "red";
+                h1Obj.style.width = "300px"
+                h1Obj.style.height= "200px";
+            } else {
+                h1Obj.style.backgroundColor = "blue";
+                h1Obj.style.width = "200px"
+                h1Obj.style.height= "300px";
+            }
+        }   
+    </script>
+</head>
+<body>
+        <h1 id="change" onclick="colorChange()">Change color</h1>
+</body>
+</html>
