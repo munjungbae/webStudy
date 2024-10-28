@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test14</title>
+    <script>
+        function showDetail() {
+            document.querySelector('.desc').style.display = "block";
+            document.querySelector('.open').style.display = "none";
+        }
+        function hideDetail() {
+            document.querySelector('.desc').style.display = "none";
+            document.querySelector('.open').style.display = "block";
+        }
+    </script>
+
+    <style>
+        .main {
+            background-image: url(../chapter04/ch04_media/cat-scream.gif);
+            width: 640px;
+            height: 639px;
+        }
+        #over{
+            position: relative;
+            top : 615px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <button class="open" id="over" onclick="showDetail()">상세 설명 보기</button>
+    </div>
+    <div class="desc" id="detail">
+        <h4>고양이</h4>
+        <p>소리지르고 있다.</p>
+        <button class="close" onclick="hideDetail()">상세 설명 닫기</button>
+    </div>
+
+</body>
+</html>
