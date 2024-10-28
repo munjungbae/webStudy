@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seatNo</title>
+    <script>
+        document.write("<h3>자리 배치도</h3>")
+        let memNum = parseInt(prompt("원하시는 인원을 입력 해 주세요"));
+        let col = parseInt(prompt("한줄 당 몇명 씩 앉습니까?"));
+        let row = memNum / col;
+
+        document.write("<table>")
+        for (let i=0; i<row; i++) {
+            document.write("<tr>")
+            for (let j=1; j<=col; j++ ) {
+                let seatNo = i * col + j;
+                if (seatNo > memNum) {
+                    break;
+                }
+                document.write(`<td>좌석${seatNo}</td>`)
+            }
+            document.write("</tr>")
+        }
+        document.write("</table>")
+    </script>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td { 
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
