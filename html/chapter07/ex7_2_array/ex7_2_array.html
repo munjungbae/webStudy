@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY</title>
+    <script>
+        let a1 = new Array(0,1,2,3,4);
+        let a2 = [9,8,7,6,5];
+        document.write(`a1 = [${a1}]<br>a2 = [${a2}]<br>`);
+        let a3 = a1.concat(a2);
+        document.write(`a3 = [${a3}]<br>`);
+
+        function filterValue(item) {
+            return item >= 7;
+        }
+        
+        //필터링 진행하는 이름 있는 함수 사용 예제.
+        let a4 = a2.filter(filterValue);
+        document.write(`a4(a2.filter()) : [${a4}]<br>`)
+
+        // 이름이 없는 함수
+        let a5 = a2.filter(function(item) {
+            return item >= 7
+        });
+        document.write(`a5(a2.filter()) : [${a5}]<br>`)
+
+        // index of 는 배열속 값을 찾아 위치값을 반환해주는 함수.
+        let a6 = a2.indexOf(6)
+        document.write(`a6(a2.indexOf(6)) : [${a6}]<br>`)
+
+        //push는 배열속에 값을 삽입하는 기능
+        a2.push(15);
+        document.write(`a2.push(15) : [${a2}]<br>`)
+
+        //pop은 배열속 마지막 값을 빼버리는 기능
+        a2.pop();
+        document.write(`a2.pop() : [${a2}]<br>`)
+
+        //reverse는 배열의 앞 뒤 순서를 바꾸는 기능
+        //배열 reverser 자기 자신의 배열 구조가 변화한다.
+        a2.reverse()
+        document.write(`a2.reverse() : [${a2}]<br>`)
+
+        //배열의 앞의 값을 빼버린다
+        a2.shift();
+        document.write(`a2.shift : [${a2}] <br>`)
+
+        //앞에서 값을 입력한 것
+        a2.unshift(20);
+        document.write(`a2.unshift : [${a2}] <br>`)
+
+        //slice(1,3) 0`4번 값에서 1번쨰 값 부터 3번째전까지 가져오기 
+        let a7 = a2.slice(1,3);
+        document.write(`a2.slice(1,3) : [${a7}]<br>`)
+
+        //sort 값 정렬
+        let a8 = a2.sort((item1, item2) => {
+            return item2 - item1; //큰수부터 작은수까지 정렬
+        });
+        document.write(`a2.sort() : [${a8}]<br>`)
+
+        //join = 배열을 문자열로 변환.
+        let dataValue = a2.join("=");
+        document.write(`a2.join("=") : [${dataValue}]<br>`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
