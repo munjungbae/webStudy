@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test13</title>
+    <script>
+        function settingcolor(colorName) {
+            let hObj = window.document.getElementById("h");
+            window.console.log("hObj" , hObj)
+            hObj.style.backgroundColor = colorName;
+        }
+    </script>
+    <style>
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            width: 500px;
+            height: 500px;
+        }
+        a {
+            border: 1px solid black;
+            padding: 10px 30px;
+            text-decoration: none;
+            color: black;
+        }
+        header {
+            position:relative;
+            top : 50px;
+            border: 1px solid black;
+            border-radius: 30px;
+            width: 450px;
+            height: 350px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="button">
+            <a href="#" onclick="settingcolor('green')">Green</a>
+            <a href="#" onclick="settingcolor('orange')">Orange</a>
+            <a href="#" onclick="settingcolor('purple')">Purple</a>
+        </div>
+        <header id="h">
+            테스팅
+        </header>
+
+    </div>
+
+
+</body>
+</html>
