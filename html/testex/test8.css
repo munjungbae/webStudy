@@ -6,11 +6,20 @@
 
 /* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
 .section .slidewrap {
-    max-width:800px;margin:0 auto;overflow:hidden;}
+    max-width:800px;
+    margin:0 auto;
+    overflow:hidden;
+}
 .section .slidelist {
-    white-space:nowrap;font-size:0;}
+    white-space:nowrap;
+    font-size:0;
+}
 .section .slidelist > li {
-    display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}
+    display:inline-block;
+    vertical-align:middle;
+    width:100%;
+    transition:all .5s;
+}
 .section .slidelist > li > a {
     display:block;position:relative;}
 .section .slidelist > li > a img {
