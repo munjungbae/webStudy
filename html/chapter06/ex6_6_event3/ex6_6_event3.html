@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT3</title>
+</head>
+<script>
+    function randomFood() {
+        let priceObj = window.document.getElementById("price");
+        // 만약 금액이 1200원 미만일 시 경고 발생
+        let price = window.parseInt(priceObj.value);
+        window.console.log("price", price);
+        
+        if(price < 1200) {
+            window.alert(`금액이 부족 합니다\n입력금액 : ${price}`)
+            return
+        }
+        // 금액이 1200원 이상이면 1200원으로 해당 금액을 나누어 음식개수 파악.
+        let count = Math.floor(price/1200);
+        let total = count * 1200;
+        let change = price - total;
+        //개수 만큼 음식이미지 출력
+        for (let i =0; i<count; i++){
+            //랜덤수
+            let no = Math.floor(Math.random()*(3-1+1)+1);
+            document.write(`${i+1}번 음식 : <img src="../ch06_media/food${no}.png" width="100px">`);
+            
+        }
+        document.write("<hr>");
+        document.write(`<p>총액 : ${total}, 잔액 : ${change} <p>`)
+
+        //총액, 잔액 계산후 출력
+    }
+</script>
+<body>
+    <form action="#" method="get">
+        <img src="../ch06_media/food1.png" alt="">
+        <p>음식 1개당 1200원입니다. 주문 하고 싶은 금액</p>
+        <label for="price">금액 입력</label>
+        <input type="number" name="price" id="price" min="1200" placeholder="현재 금액을 입력 해 주세요.">
+        <button type="button" onclick="randomFood();">주문하기</button>
+    </form>
+</body>
+</html>
