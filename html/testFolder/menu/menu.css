@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* 폰트사이즈 , 구글폰트 ,글자 간격(letter-spacing). 배경색 */
+    background-color: beige;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/* 메뉴 css 구간 */
+ul {
+    border: 1px solid black;
+    list-style: none;
+    background-color: rgb(147, 162, 234);
+    width: 1200px;
+    margin:0px auto;
+    display: flex;
+    align-items: center;
+}
+
+ul > li > a {
+    display: inline-block;
+    padding: 16px;
+}
+
+ul > li:hover > a {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown_content{
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    display: none;
+    background-color: rgb(147, 162, 234);
+    min-width: 160px;
+    box-shadow: 10px 3px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown_content a {
+    display: block;
+    padding: 16px
+}
+
+.dropdown_content a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+header {
+    width: 1200px;
+    background-size: contain;
+    margin:0px auto;
+    height: 200px;
+    background-image: url(../img/다운로드.jpg);
+}
