@@ -35,14 +35,17 @@
                 document.write(`QuerySelectorAll2 : mjb2[${index}] = ${mjb2.textContent} <br>`);
             })
             
+            //ID로 객체 찾기
             const mjbID = document.querySelector("#mjb");
             document.write(`QuerySelector p id : ${mjbID.textContent}`)
 
+            //body에 있는 자식객체로 찾기
             const bodyChild = document.querySelectorAll("body > p");
             bodyChild.forEach((bodyArray, index) => {
                 document.write(`QuerySelectorAll3 : bodyArray[${index}] = ${bodyArray.textContent} <br>`)
             })
 
+            //속성명으로 찾기
             const classMjbArray = document.querySelectorAll('[class="mjb"]');
             classMjbArray.forEach((classMjb, index) =>{
                 document.write(`QuerySelectorAll4 : class[${index}] = ${classMjb.textContent} <br>`)
