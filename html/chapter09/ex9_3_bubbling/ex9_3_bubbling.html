@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUBLE</title>
+</head>
+<script>
+    function onload() {
+        const divParent = document.querySelector(".parent");
+        const divChild = document.querySelector(".child");
+
+        //이벤트 등록
+        divParent.addEventListener("click", (e)=>{
+            alert(`divParent`);
+        },true);
+        divChild.addEventListener("click", (e)=>{
+            alert(`divChild`);
+            e.stopPropagation();
+        });
+    }
+</script>
+<style>
+    div.parent {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        background-color: beige;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div.parent > span {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    div.parent .child {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        background-color: rgba(0, 0, 0, 0.308);
+    }
+</style>
+<body onload="onload();">
+    <div class="parent">
+        <span>부모영역</span>
+        <div class="child">
+            <span>자식영역</span>
+        </div>
+    </div>
+</body>
+</html>
