@@ -259,12 +259,13 @@ main p {
 
 .img_change {
     position : relative;
+    height: 513px;
 }
 .img_change img {
-    position: relative;
+    position: absolute;
     left: 25%;
     width: 50%;
-    height: 513px;
+    height: 100%;
     border-radius: 30px;
 }
 
