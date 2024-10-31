@@ -15,10 +15,11 @@
         let deg = 90;
         const img = document.querySelector('[src="../img/jjondugi1.jpg"]');
         //이벤트 리스너 등록 및 핸들러 처리 기능 구현
-        img.addEventListener("click", ()=>{
+        img.addEventListener("click", (event)=>{
+            console.log(`event : ${event}`);
             img.style.transform = `rotate(${deg}deg)`;
             deg = deg + 90;
-            img.style.transition = `1s`;
+            img.style.transition = `50s`;
         })
     }
 </script>
