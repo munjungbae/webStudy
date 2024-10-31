@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT_HTML</title>
+</head> 
+<body>
+    
+    <p> p & no class</p>
+    
+    <p class="mjb">p class = "mjb" 1</p>
+    
+    <p class="mjb">p class = "mjb" 2</p>
+    
+    <p id="mjb"> p id = "mjb" 3</p>
+
+        <hr>
+        <script>
+            const mjb = document.getElementsByClassName(".mjb");
+            for (let data in mjb) {
+                document.write(`mjb[${data}] = ${mjb[data]} <br>`);
+            }
+
+            //쿼리로 객체 찾기
+            const mjbArray = document.querySelectorAll(".mjb");
+            mjbArray.forEach((mjb, index) => {
+                document.write(`QuerySelectorAll : mjb[${index}] = ${mjb.textContent} <br>`)
+            })
+            
+            
+            //태그명으로 객체 찾기
+            const mjbArray2 = document.querySelectorAll("p");
+            mjbArray2.forEach((mjb2, index)=>{
+                document.write(`QuerySelectorAll2 : mjb2[${index}] = ${mjb2.textContent} <br>`);
+            })
+            
+            //ID로 객체 찾기
+            const mjbID = document.querySelector("#mjb");
+            document.write(`QuerySelector p id : ${mjbID.textContent}`)
+
+            //body에 있는 자식객체로 찾기
+            const bodyChild = document.querySelectorAll("body > p");
+            bodyChild.forEach((bodyArray, index) => {
+                document.write(`QuerySelectorAll3 : bodyArray[${index}] = ${bodyArray.textContent} <br>`)
+            })
+
+            //속성명으로 찾기
+            const classMjbArray = document.querySelectorAll('[class="mjb"]');
+            classMjbArray.forEach((classMjb, index) =>{
+                document.write(`QuerySelectorAll4 : class[${index}] = ${classMjb.textContent} <br>`)
+            })
+            
+        </script>
+</body>
+</html>

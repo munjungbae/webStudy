@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test16</title>
+</head>
+<script>
+    function load() {
+        const btn = document.querySelector('[type="button"]');
+        const box = document.querySelector("#checkbox");
+        const text = document.querySelector("#result");
+
+        btn.addEventListener("click", process);
+
+        function process() {
+            if(box.checked === true) {
+                text.textContent = `작업을 진행하겠습니다.`;
+            }else {
+                text.textContent = `체크박스를 눌러 진행을 확인해 주세요`;
+            }
+        }
+    }
+</script>
+<body onload="load();">
+    <input type="checkbox" name="checkbox" id="checkbox">
+    <label for="checkbox">다음 단계 진행 확인!</label><br><br>
+    <button type="button">process</button>
+    <hr>
+    <p id="result">test</p>
+</body>
+</html>

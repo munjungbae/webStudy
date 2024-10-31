@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYLE_CHANGE</title>
+</head>
+<style>
+    div {
+        width : 200px;
+        height: 200px;
+        border: 1px solid black;
+        background-color: aquamarine;
+        margin: 0 auto;
+    }
+</style>
+<script>
+    function onload() {
+        //변수 선언
+        const colorString = "0123456789ABCDEF"
+        let count = 0;
+        let color = "#";
+        let timerID = null;
+        //객체 찾기
+        const divObj = document.querySelector("div");
+        //setInterval 사용
+        timerID = setInterval(styleChange, 250);
+        //handler 함수 설정
+        function styleChange() {
+            count++;
+            if(count > 50) {
+                clearInterval(timerID);
+            }
+            //색상값을 랜덤으로 변경시킨다.
+            for (let i=0; i<6; i++) {
+               let index = Math.floor(Math.random()*(15+1)+0);
+               let colorValue = colorString[index];
+               color += colorValue;
+            }
+            //화면 객체에 속성값 적용
+            divObj.style.backgroundColor = color;
+            divObj.style.borderRadius = `${count}%`
+            color = "#";
+        }
+    }
+</script>
+<body onload="onload();">
+    <div>
+    </div>
+</body>
+</html>

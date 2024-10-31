@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.banner ul {
+    list-style: none;
+    display: flex;
+}
+
+.banner {
+    background-color: rgb(218, 223, 214) ;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.205) 10px 5px 15px 1px;
+}
+
+.banner_right {
+    position: relative;
+    display: flex;
+    margin: 25px;
+    align-items: center;
+}
+.banner_right ul {
+    display: flex;
+    align-items: center;
+}
+
+.banner_right li a {
+    display: inline-block;
+    padding: 16px;
+}
+.banner_right li:hover {
+    background-color: rgba(218, 223, 214, 0.2)
+}
+
+.banner_right li:hover a {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgb(218, 223, 214);
+    color: white;
+    
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown_content{
+    position: absolute;
+    display: none;
+    color :rgb(218, 223, 214);
+    top: 59px;
+    z-index: 1;
+}
+
+.dropdown_content a {
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.dropdown_content a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+
+.banner_right a{
+    color :rgb(146, 167, 162, 0.8);
+    padding: 0px 10px;
+}
+
+.banner_right li{
+    font-size: 20px;
+}
+
+.banner_right button{
+    color :rgb(146, 167, 162, 0.8);
+    padding: 5px;
+    font-size: 17px;
+    margin-left: 50px;
+    border: 1px solid rgba(146, 167, 162, 0.8);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner_left {
+    position: relative;
+
+    display: flex;
+    margin: 30px;
+    align-items: center;
+}
+
+.banner_left a {
+    color : rgb(33, 67, 43);
+    font-size: 35px;
+    padding-right: 10px;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    margin: 40px 270px;
+}
+
+.menu1 {
+
+}
+
+nav {
+    position: relative;
+    justify-content: space-between;
+    margin-right: 10px;
+    width: 250px;
+}
+
+nav h3{
+    border-bottom: 2px solid rgb(0, 128, 0);
+    padding-bottom: 10px;
+}
+nav ul {
+    background-color: rgb(238, 238, 238);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+nav li{
+    display: inline-block;
+    padding: 5px;
+    font-size: 20px;
+}
+nav li:hover{
+    background-color: rgba(187, 187, 187, 0.459);
+}
+nav a{
+    color: black;
+}
+
+
+nav h5 {
+    padding: 10px 0px;
+}
+
+
+main {
+    position: relative;
+    width: 100%;
+    margin-left: 10px;
+}
+
+
+.main_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_top a{
+    color:black;
+}
+
+.main_top ul, ul li{
+    display: flex;
+    margin-left: 20px;
+    font-size: 12px;
+}
+main p {
+    font-size: 12px;
+    margin: 15px 0px;
+}
+
+.select1 select {
+    width: 100px;
+}
+
+.select_display {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#search {
+    height: 23px;
+}
+
+.select_display button{
+    background-color: rgb(114, 114, 114);
+    color: white;
+    padding: 1px 5px;
+    font-size: 13px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.dgree {
+    border-top: 2px solid rgb(0, 128, 0);
+    background-color: rgb(238, 238, 238) ;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+.dgree a, .dgree1 a {
+    color: black;
+}
+
+.dgree1 {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4.5px 0px;
+}
+
+.dgree h5{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.dgree1 p{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}  
+
+.title {
+    padding: 5px 400px;
+}
+
+.page ul{
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px;
+    align-items: center;
+}
+
+.page ul li {
+    font-size: 13px;
+    padding: 5px 10px;
+    margin: 0px;
+    color: black;
+}
+
+.page ul li:hover {
+    background-color: rgba(114, 114, 114, 0.61);
+}
+

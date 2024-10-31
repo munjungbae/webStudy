@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test17</title>
+    <script>
+        function load () {
+            const btn = document.querySelector('[type="button"]');
+            const radioArray = document.querySelectorAll('[type="radio"]');
+            const p = document.querySelector("#result");
+            
+
+            btn.addEventListener("click", change);
+
+            function change() {
+                radioArray.forEach((obj)=>{
+                    if(obj.checked === true) {
+                        p.textContent = `${obj.value}`;
+                    }
+                })
+
+                // for (let i=0; i < radioArray.length; i++) {
+                //     if(radioArray[i].checked === true) {
+                //         p.textContent = `${radioArray[i].value}`;
+                //     }
+                // }
+            }
+        }
+    </script>
+</head>
+<body onload="load();">
+    <form action="#" method="get" name="myform">
+        <input type="radio" name="radio" id="red" value="RED" checked>
+        <label for="red">RED</label><br>
+        <input type="radio" name="radio" id="green" value="GREEN">
+        <label for="green">GREEN</label><br>
+        <input type="radio" name="radio" id="blue" value="BLUE">
+        <label for="blue">BLUE</label><br>
+        <br>
+        <button type="button">choice</button>
+        <hr>
+        <p id="result">t123t</p>
+</body>
+    </form>
+
+</html>
