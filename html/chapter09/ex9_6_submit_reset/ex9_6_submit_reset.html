@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBMIT_RESET</title>
+    <script>
+        function onload() {
+            const myform = document.querySelector("myform");
+            const id = document.querySelector("#id");
+            const pwd = document.querySelector("#pwd");
+            const admitID = "mjb";
+            const admitPWD = "1234";
+            
+            myform.addEventListener("submit", (event)=> {
+                
+                if(id.value !== admitID){
+                    id.nextSibling.textContent = "아이디가 맞지 않습니다.";
+                    id.textContent = "";
+                    id.focus()
+                    return;
+                } else {
+                    id.nextSibling.textContent = "성공";
+                }
+                if(pwd.value !== admitPWD){
+                    pwd.nextSibling.textContent = "비밀번호가 맞지 않습니다.";
+                    pwd.textContent = "";
+                    pwd.focus();
+                    return;
+                } else {
+                    pwd.nextSibling.textContent = "성공";
+                }
+                myform.submit(); // 서버를 전송하고 폼에있는 데이터는 reset
+            });
+        }
+    </script>
+</head>
+
+<body onload="onload();">
+    <form action="#" method="get" name="myform">
+        <label for="id">아이디입력</label>
+        <input type="text" name="id" id="id" placeholder="테스트"><span></span> <br>
+        <label for="pwd">비밀번호입력</label>
+        <input type="password" name="pwd" id="pwd" placeholder="테스트"><span></span> <br>
+        <button type="submit">전송하기</button>
+        <button type="reset">취소하기</button>
+    </form>
+</body>
+</html>
