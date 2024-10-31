@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSERT_TABLE</title>
+</head>
+<script>
+    function onload() {
+        //객체찾기
+        let count = 0;
+        let flag = false;
+        const divObj = document.querySelector("div");
+        const btnObj = document.querySelector('[type="button"]');
+
+        //테이블추가
+        const table = document.createElement("table");
+        table.style.border = "1px solid black";
+        table.style.borderCollapse = `collapse`;
+        table.style.margin = `0px auto`;
+        divObj.appendChild(table);
+
+        //버튼을 누르면 테이블을 생성하는 이벤트 추가
+        btnObj.addEventListener("click", ()=>{
+            //버튼 클릭시 테이블 열, 셀, 셀 내용 생성
+            //이후 테이블에 추가.
+
+            //테이블 count에 들어갈 내용 생성
+            const row = table.insertRow(count);
+            row.style.border = "1px solid black";
+            const td0 = row.insertCell(0);
+            td0.style.border = "1px solid black";
+            const td1 = row.insertCell(1);
+            td1.style.border = "1px solid black";
+            if (flag === false) {
+                td0.textContent = `${count}번째 원래 셀`;
+                td1.textContent = `${count}번째 원래 셀`;
+                flag = true;
+            }
+            else {
+                td0.textContent = `${count}번째 추가 셀`;
+                td1.textContent = `${count}번째 추가 셀`;
+            }
+            count++;
+        })
+    }
+</script>
+<style>
+    div {
+        border: 1px solid black;
+        width: 300px;
+        text-align: center;
+    }
+</style>
+<body onload="onload();">
+    <div>
+
+    </div>
+    <hr>
+    <button type="button">열추가</button>    
+</body>
+</html>
