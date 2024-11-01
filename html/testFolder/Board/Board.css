@@ -47,7 +47,6 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: rgb(218, 223, 214);
     color: white;
-    
 }
 
 .dropdown {
@@ -79,7 +78,6 @@ body {
 
 .banner_right a{
     color :rgb(146, 167, 162, 0.8);
-    padding: 0px 10px;
 }
 
 .banner_right li{
@@ -257,5 +255,37 @@ main p {
 
 .page ul li:hover {
     background-color: rgba(114, 114, 114, 0.61);
+}
+
+.img_change {
+    position : relative;
+    height: 513px;
+}
+.img_change img {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.fa-caret-left {
+    color: rgba(0, 0, 0, 0);
+    position: absolute;
+    padding: 13% 4%;
+    left: 25%;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.fa-caret-right{
+    color: rgba(0, 0, 0, 0);
+    position: absolute;
+    padding: 13% 4%;
+    right: 25%;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 30px;
 }
 

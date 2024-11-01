@@ -7,7 +7,49 @@
     <link rel="stylesheet" href="./Board.css">
     <script src="https://kit.fontawesome.com/f5a3833180.js" defer crossorigin="anonymous"></script>
 </head>
-<body>
+<script>
+    function onload() {
+        const img = document.querySelector(".banner_change");
+        const left = document.querySelector(".fa-caret-left");
+        const right = document.querySelector('.fa-caret-right');
+
+        let intervalID = null;
+
+        function change() {
+            let num = Math.floor(Math.random()*(4-1+1)+1);
+            let srcData = `http://127.0.0.1:5501/html/testFolder/img/lulu${num}.png`;
+            img.src = srcData;
+        }
+        intervalID = setInterval(change, 1000);
+
+        img.addEventListener("mouseenter", (event) => {
+            clearInterval(intervalID);
+        })
+        img.addEventListener("mouseleave", (event) => {
+            intervalID = setInterval(change, 1000);
+        })
+        left.addEventListener("click", change);
+
+        left.addEventListener("mouseenter", (event) => {
+            clearInterval(intervalID);
+        })
+        left.addEventListener("mouseleave", (event) => {
+            intervalID = setInterval(change, 1000);
+        })
+
+        right.addEventListener("click", change);
+
+        right.addEventListener("mouseenter", (event) => {
+            clearInterval(intervalID);
+        })
+        right.addEventListener("mouseleave", (event) => {
+            intervalID = setInterval(change, 1000);
+        })
+    }
+
+
+</script>
+<body onload="onload();">
     <header>
         <div class="banner">
             <div class="banner_left">
@@ -55,6 +97,13 @@
             </div>
         </div>
     </header>
+    <aside>
+        <div class="img_change">
+            <i class="fa-solid fa-caret-left"></i>
+            <img src="../img/lulu1.png" alt="" class="banner_change">
+            <i class="fa-solid fa-caret-right"></i>
+        </div>
+    </aside>
     <div class="content">
         <nav>
             <h3>국민소통</h3>
