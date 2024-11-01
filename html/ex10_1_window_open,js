@@ -1,0 +1,17 @@
+function onload() {
+    
+    const btnOpen = window.document.querySelector('#open');
+    const idObj = window.document.querySelector("#userID");
+    const btnClose = window.document.querySelector('#close');
+    //팝업창(window)의 핸들러 = window 핸들변수
+    let win = null;
+    btnOpen.addEventListener("click", () => {
+          win = window.open("./ex8_2_form.html", " _blank", "width=400, height=400, left=30, top=30");
+          win.document.querySelector("#userID").value = idObj.value;
+        })
+   
+        
+    btnClose.addEventListener("click", () => {
+          win.close();
+        })
+  }
