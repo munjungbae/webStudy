@@ -117,4 +117,28 @@ for(let i=0; i<slideCount; i++) {
 
 indicatorArray.forEach()
     
+    const idPattern = /^[\w]{3,}$/; 
+    const idmailPattern = /^@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i
+    const pwdPattern = /^[a-zA-Z0-9_]{6,10}$/;  //a-z, A-Z, 0-9, _(언더바) 의 범위안의 숫자를 {6,10} 6글자 이상 10글지 이하로 작성 
+    const namePattern = /^[가-힣]{2,4}|[A-Z]{1}[a-zA-Z\x20]{1,19}$/; //한글 2~4글자, 영문자 첫번째 글자는 대문자 + 뒤에는 소,대문자 1~19글자,  \x20 = 공백을 의미
+    const yearPattern = /^\d{4}$/;
+    const monthPattern = /^d[1-12]{1,2}$/;
+    const dayPattern = /^d[1-31]{1,2}$/;
+    const genderPattern = /^[가-힣]{2}$/;
+    const emailPattern = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i
+    const mobilePattern = /^010-(?:[\d]{3}|[\d]{4})-[\d]{4}$/
+
+    //객체 찾기
+    const inputID = document.querySelector("#input-id");
+    const inputIdEmail = document.querySelector("#input-id");
+    const inputPW1 = document.querySelector("#input-pw1");
+    const inputPW2 = document.querySelector("#input-pw2");
+    const inputName = document.querySelector("#input-name");
+    const inputYear= document.querySelector("#year");
+    const inputMonth = document.querySelector("#month");
+    const inputDay = document.querySelector("#day");
+    const inputGender = document.querySelector("#gendet");
+    const inputEmail = document.querySelector("#input-email");
+    const inputMobile = document.querySelector("#input-mobile");
 }
+
