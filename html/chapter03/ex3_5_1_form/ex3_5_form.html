@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM DATA</title>
+</head>
+<style>
+    form {
+        width: 400px;
+        border: 1px solid black;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 10px;
+    }
+    
+    label{
+        display: inline-block;
+        width: 150px;
+    }
+    </style>
+<body>
+    <h1 style="display: none;">FORM DATA 예시</h1>
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>개인정보 입력란</legend>
+            <label for="age">나이</label>
+            <input type="text" name="age" id="age">
+
+            <label for="email">이메일</label>
+            <input type="text" name="email" id="email" placeholder="HTML">
+        </fieldset>
+        
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <label for="id">아이디</label>
+            <input type="text" name="id" id="id" placeholder="ID">
+
+            <label for="pwd">비밀번호</label>
+            <input type="password" name="pwd" id="pwd" placeholder="password">
+        </fieldset>
+
+ 
+        <fieldset>
+            <legend>자기소개 입력란</legend>
+            <label for="into"><b></b></label>
+            <br>
+            <textarea name="into" id="into" cols="30" rows="10" placeholder="300자 이내로 입력 해 주세요"></textarea>
+            <div>
+                <button>서버 전송</button>
+                <button type="reset">전송 취소</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
